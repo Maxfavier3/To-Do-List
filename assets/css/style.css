@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    background-color: #EEC584;
+}
+
+#todo_card {
+    width: 40%;
+    height: auto;
+    padding: 2rem;
+    border: solid #333 1px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f9f9f9;
+}
+
+.todo_form {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 60%;
+    height: 20px;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 30px;
+    border: solid #333 1px;
+    background-color: #f9f9f9;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: solid #333 1px;
+}
