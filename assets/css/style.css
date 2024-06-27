@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
-    background-color: #EEC584;
+    background-color: white;
 }
 
 #todo_card {
@@ -26,24 +26,25 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: #f9f9f9;
+    background-color: white;
 }
 
 .todo_form {
-    width: 80%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 input {
-    width: 60%;
+    width: 80%;
     height: 20px;
     padding: 1rem;
     margin-right: 1rem;
     border-radius: 30px;
     border: solid #333 1px;
-    background-color: #f9f9f9;
+    background-color: white;
 }
 
 button {
@@ -52,4 +53,23 @@ button {
     padding: 0.5rem;
     border-radius: 50%;
     border: solid #333 1px;
+    background-color: #88ba8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.task_item::before {
+    
+}
+
+.task_item {
+    list-style: none;
 }
