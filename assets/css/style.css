@@ -38,7 +38,7 @@ body {
 }
 
 input {
-    width: 80%;
+    width: 60%;
     height: 30px;
     padding: 1.2rem;
     margin-right: 1rem;
@@ -54,8 +54,9 @@ button {
     height: 40px;
     padding: 0.5rem;
     border-radius: 50%;
-    border: solid #333 1px;
+    border: none;
     background-color: #88ba8c;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,10 +72,10 @@ span {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 30%;
+    margin-left: 50%;
 }
 
-.task_item::before {
+li::before {
     content: "";
     position: absolute;
     width: 25px;
@@ -83,10 +84,10 @@ span {
     background-image: url(../../images/unchecked.png);
     background-size: cover;
     background-position: center;
-    right: 135px;
+    right: 90px;
 }
 
-.task_item {
+li {
     list-style: none;
     font-size: 20px;
     font-weight: 500;
@@ -95,12 +96,23 @@ span {
     position: relative;
 }
 
-.task_item.checked {
+li::after{
+    content: "";
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-image: url(../../images/delete.png);
+    background-size: cover;
+    background-position: center;
+    right: 300px;
+}
+
+li.checked {
     color: #555;
     text-decoration: line-through;
 }
 
-.task_item.checked::before {
+li.checked::before {
     background-image: url(../../images/checked.png);
     background-repeat: no-repeat;
 }
